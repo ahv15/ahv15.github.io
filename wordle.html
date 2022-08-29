@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+</head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+   .squares {
+      display: flex;
+      justify-content: center;
+   }
+
+   .box {
+      width: 70px;
+      height: 70px;
+      background: black;
+      margin: 4px;
+      border-style: ridge;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-width: 1px;
+   }
+</style>
+
+<body style="background-color:black;">
+
+   <div class='container'>
+
+      <div class="squares">
+         <div id="b1c1" class="box">
+            <p id="r1c1" style="color:white"></p>
+         </div>
+         <div id="b1c2" class="box">
+            <p id="r1c2" style="color:white"></p>
+         </div>
+         <div id="b1c3" class="box">
+            <p id="r1c3" style="color:white"></p>
+         </div>
+         <div id="b1c4" class="box">
+            <p id="r1c4" style="color:white"></p>
+         </div>
+         <div id="b1c5" class="box">
+            <p id="r1c5" style="color:white"></p>
+         </div>
+      </div>
+
+
+
+      <div class="squares">
+         <div id="b2c1" class="box">
+            <p id="r2c1" style="color:white"></p>
+         </div>
+         <div id="b2c2" class="box">
+            <p id="r2c2" style="color:white"></p>
+         </div>
+         <div id="b2c3" class="box">
+            <p id="r2c3" style="color:white"></p>
+         </div>
+         <div id="b2c4" class="box">
+            <p id="r2c4" style="color:white"></p>
+         </div>
+         <div id="b2c5" class="box">
+            <p id="r2c5" style="color:white"></p>
+         </div>
+      </div>
+
+
+      <div class="squares">
+         <div id="b3c1" class="box">
+            <p id="r3c1" style="color:white"></p>
+         </div>
+         <div id="b3c2" class="box">
+            <p id="r3c2" style="color:white"></p>
+         </div>
+         <div id="b3c3" class="box">
+            <p id="r3c3" style="color:white"></p>
+         </div>
+         <div id="b3c4" class="box">
+            <p id="r3c4" style="color:white"></p>
+         </div>
+         <div id="b3c5" class="box">
+            <p id="r3c5" style="color:white"></p>
+         </div>
+      </div>
+
+      <div class="squares">
+         <div id="b4c1" class="box">
+            <p id="r4c1" style="color:white"></p>
+         </div>
+         <div id="b4c2" class="box">
+            <p id="r4c2" style="color:white"></p>
+         </div>
+         <div id="b4c3" class="box">
+            <p id="r4c3" style="color:white"></p>
+         </div>
+         <div id="b4c4" class="box">
+            <p id="r4c4" style="color:white"></p>
+         </div>
+         <div id="b4c5" class="box">
+            <p id="r4c5" style="color:white"></p>
+         </div>
+      </div>
+
+      <div class="squares">
+         <div id="b5c1" class="box">
+            <p id="r5c1" style="color:white"></p>
+         </div>
+         <div id="b5c2" class="box">
+            <p id="r5c2" style="color:white"></p>
+         </div>
+         <div id="b5c3" class="box">
+            <p id="r5c3" style="color:white"></p>
+         </div>
+         <div id="b5c4" class="box">
+            <p id="r5c4" style="color:white"></p>
+         </div>
+         <div id="b5c5" class="box">
+            <p id="r5c5" style="color:white"></p>
+         </div>
+      </div>
+
+
+      <div class="squares">
+         <div id="b6c1" class="box">
+            <p id="r6c1" style="color:white"></p>
+         </div>
+         <div id="b6c2" class="box">
+            <p id="r6c2" style="color:white"></p>
+         </div>
+         <div id="b6c3" class="box">
+            <p id="r6c3" style="color:white"></p>
+         </div>
+         <div id="b6c4" class="box">
+            <p id="r6c4" style="color:white"></p>
+         </div>
+         <div id="b6c5" class="box">
+            <p id="r6c5" style="color:white"></p>
+         </div>
+      </div>
+
+      <div style="padding:20px; text-align: center" class="my-3" id='first'>
+         <div class="btn-group-lg mb-3">
+            <button onclick="updateChar('Q')" class="btn btn-secondary btn-sm mr-2">Q</button>
+            <button onclick="updateChar('W')" class="btn btn-secondary btn-sm mr-2">W</button>
+            <button onclick="updateChar('E')" class="btn btn-secondary btn-sm mr-2">E</button>
+            <button onclick="updateChar('R')" class="btn btn-secondary btn-sm mr-2">R</button>
+            <button onclick="updateChar('T')" class="btn btn-secondary btn-sm mr-2">T</button>
+            <button onclick="updateChar('Y')" class="btn btn-secondary btn-sm mr-2">Y</button>
+            <button onclick="updateChar('U')" class="btn btn-secondary btn-sm mr-2">U</button>
+            <button onclick="updateChar('I')" class="btn btn-secondary btn-sm mr-2">I</button>
+            <button onclick="updateChar('O')" class="btn btn-secondary btn-sm mr-2">O</button>
+            <button onclick="updateChar('P')" class="btn btn-secondary btn-sm mr-2">P</button>
+         </div>
+         <div style="padding:5px 30px" class="btn-group-lg mb-3">
+            <button onclick="updateChar('A')" class="btn btn-secondary btn-sm mr-2">A</button>
+            <button onclick="updateChar('S')" class="btn btn-secondary btn-sm mr-2">S</button>
+            <button onclick="updateChar('D')" class="btn btn-secondary btn-sm mr-2">D</button>
+            <button onclick="updateChar('F')" class="btn btn-secondary btn-sm mr-2">F</button>
+            <button onclick="updateChar('G')" class="btn btn-secondary btn-sm mr-2">G</button>
+            <button onclick="updateChar('H')" class="btn btn-secondary btn-sm mr-2">H</button>
+            <button onclick="updateChar('J')" class="btn btn-secondary btn-sm mr-2">J</button>
+            <button onclick="updateChar('K')" class="btn btn-secondary btn-sm mr-2">K</button>
+            <button onclick="updateChar('L')" class="btn btn-secondary btn-sm mr-2">L</button>
+         </div>
+         <div class="btn-group-lg mb-3">
+            <button onclick="checkRow()" class="btn btn-success btn-sm mr-2 enter-input">Enter</button>
+            <button onclick="updateChar('Z')" class="btn btn-secondary btn-sm mr-2">Z</button>
+            <button onclick="updateChar('X')" class="btn btn-secondary btn-sm mr-2">X</button>
+            <button onclick="updateChar('C')" class="btn btn-secondary btn-sm mr-2">C</button>
+            <button onclick="updateChar('V')" class="btn btn-secondary btn-sm mr-2">V</button>
+            <button onclick="updateChar('B')" class="btn btn-secondary btn-sm mr-2">B</button>
+            <button onclick="updateChar('N')" class="btn btn-secondary btn-sm mr-2">N</button>
+            <button onclick="updateChar('M')" class="btn btn-secondary btn-sm mr-2">M</button>
+            <button onclick="deleteChar()" class="btn btn-danger btn-sm mr-2">Delete</button>
+         </div>
+      </div>
+
+   </div>
+   <br><br><br><br><br><br><br><br>
+
+</body>
+
+<script type="module">
+   async function random_word() {
+      for (var i = 0; i < 26; i++) {
+         var alph = String.fromCharCode(97 + i);
+         let response = await (fetch('https://api.datamuse.com/words?sp=' + alph + '????'));
+         let data = await response.json();
+         words.push(data);
+      }
+      return words[Math.floor(Math.random() * 26)][Math.floor(Math.random() * 100)]['word']
+   }
+   window.randomWord = await random_word();
+</script>
+<script>
+   var row = 1;
+   var col = 1;
+   var str = [];
+   var words = [];
+   var gameOver = false;
+
+   function updateChar(char) {
+      if (!gameOver) {
+         var id = "r" + row + "c" + col;
+         document.getElementById(id).innerHTML = char;
+         str[col] = char;
+         if (col != 5) {
+            col++;
+         }
+      }
+   }
+   function deleteChar() {
+      if (!gameOver) {
+         var id = "r" + row + "c" + col;
+         if (col != 1 && document.getElementById(id).innerHTML == "") {
+            col--;
+         }
+         var id = "r" + row + "c" + col;
+         document.getElementById(id).innerHTML = "";
+         str[col] = "";
+      }
+   }
+
+   async function checkRow() {
+      if (!gameOver) {
+         row_str = str.join("").toLowerCase();
+         spell_check = false;
+         if (row_str.length != 5) {
+            alert("Not Enough Letters");
+         } else {
+            if (row_str == window.randomWord) {
+               for (var i = 0; i < window.randomWord.length; i++) {
+                  var id = "b" + row + "c" + (i + 1);
+                  document.getElementById(id).style.backgroundColor = "#538d4e";
+               }
+               setTimeout(function () {
+                  if (row == 1) {
+                     window.alert('You got the correct word and you made ' + row + " attempt.");
+                  } else {
+                     window.alert('You got the correct word and you made ' + row + " attempts.");
+                  }
+               }, 10);
+               return;
+            }
+            spell_check = await spellCheck(row_str);
+            if (spell_check) {
+               alert("Check the spelling of the word");
+            } else {
+               str = [];
+               frequency = getFrequency(window.randomWord);
+               if (row != 7) {
+                  for (var i = 0; i < window.randomWord.length; i++) {
+                     var id = "b" + row + "c" + (i + 1);
+                     document.getElementById(id).style.backgroundColor = "#3A3A3C";
+                  }
+                  for (var i = 0; i < window.randomWord.length; i++) {
+                     if (window.randomWord[i] == row_str[i]) {
+                        var id = "b" + row + "c" + (i + 1);
+                        document.getElementById(id).style.backgroundColor = "#538d4e";
+                        frequency[row_str[i]]--;
+                     }
+                  }
+                  for (var i = 0; i < window.randomWord.length; i++) {
+                     if (window.randomWord.includes(row_str[i]) && frequency[row_str[i]] > 0) {
+                        var id = "b" + row + "c" + (i + 1);
+                        document.getElementById(id).style.backgroundColor = "#B59F3B";
+                        frequency[row_str[i]]--;
+                     }
+                  }
+                  row++;
+                  col = 1;
+               }
+               if (row == 7) {
+                  setTimeout(function () {
+                     window.alert("Better luck next time");
+                  }, 10);
+               }
+            }
+         }
+      }
+   }
+
+   async function spellCheck(word) {
+      const options = {
+         method: 'POST',
+         headers: {
+            'content-type': 'application/json',
+            'X-RapidAPI-Key': '185d06fbe7msh83b44a43c780000p174286jsn1be10d4cfd4a',
+            'X-RapidAPI-Host': 'jspell-checker.p.rapidapi.com'
+         },
+         body: `{"language":"enUS","fieldvalues":"${word}","config":{"forceUpperCase":false,"ignoreIrregularCaps":false,"ignoreFirstCaps":true,"ignoreNumbers":true,"ignoreUpper":false,"ignoreDouble":false,"ignoreWordsWithNumbers":true}}`
+      };
+
+      let response = await (fetch('https://jspell-checker.p.rapidapi.com/check', options));
+      let data = await response.json();
+      return (data.spellingErrorCount == 1)
+   }
+
+
+   function getFrequency(string) {
+      var freq = {};
+      for (var i = 0; i < string.length; i++) {
+         var character = string.charAt(i);
+         if (freq[character]) {
+            freq[character]++;
+         } else {
+            freq[character] = 1;
+         }
+      }
+      return freq;
+   };
+
+</script>
